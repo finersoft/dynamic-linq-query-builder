@@ -12,7 +12,7 @@ namespace Castle.DynamicLinqQueryBuilder.Samples
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jquery-querybuilder").Include(
-                        "~/Scripts/query-builder.standalone.min.js"));
+                        "~/Scripts/query-builder.standalone.min.js", "~/Scripts/i18n/query-builder.zh-CN.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Castle.DynamicLinqQueryBuilder
 {
@@ -24,19 +26,29 @@ namespace Castle.DynamicLinqQueryBuilder
             var id = 1;
             foreach (var prop in dataType.GetProperties())
             {
-                if (prop.GetCustomAttribute(typeof (IgnoreDataMemberAttribute)) != null) continue;
+                if (prop.GetCustomAttribute(typeof(IgnoreDataMemberAttribute)) != null) continue;
 
                 var name = camelCase ? prop.Name.ToCamelCase() : prop.Name;
 
+
                 var title = prop.Name.ToFriendlySpacedString();
+                object[] objAttrs = prop.GetCustomAttributes(typeof(DisplayAttribute), true);//获取自定义特性  
+                                                                                         //GetCustomAttributes(要搜索的特性类型，是否搜索该成员的继承链以查找这些特性)  
+                if (objAttrs != null && objAttrs.Length > 0)
+                {
+                    DisplayAttribute attr = objAttrs[0] as DisplayAttribute;
+                    //Console.WriteLine("自定义特性Name：" + p.Name + ", 元数据：" + attr);
+                    title = attr.GetName();
+                }
+
 
                 var type = string.Empty;
 
-                if ((prop.PropertyType == typeof (double)) || (prop.PropertyType == typeof (double?)))
+                if ((prop.PropertyType == typeof(double)) || (prop.PropertyType == typeof(double?)))
                 {
                     type = "double";
                 }
-                else if ((prop.PropertyType == typeof (int)) || (prop.PropertyType == typeof (int?)))
+                else if ((prop.PropertyType == typeof(int)) || (prop.PropertyType == typeof(int?)))
                 {
                     type = "integer";
                 }

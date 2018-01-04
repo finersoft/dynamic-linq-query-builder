@@ -27,7 +27,7 @@ namespace Castle.DynamicLinqQueryBuilder.Samples.Controllers
         {
             var jsonSerializerSettings = new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() };
             ViewBag.FilterDefinition =
-               JsonConvert.SerializeObject(typeof (PersonRecord).GetDefaultColumnDefinitionsForType(false), jsonSerializerSettings);
+               JsonConvert.SerializeObject(typeof(PersonRecord).GetDefaultColumnDefinitionsForType(false), jsonSerializerSettings);
             ViewBag.Model = PersonBuilder.GetPeople();
             return View();
         }

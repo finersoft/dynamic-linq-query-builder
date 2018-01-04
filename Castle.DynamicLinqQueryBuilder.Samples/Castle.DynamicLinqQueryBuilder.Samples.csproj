@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -200,6 +201,34 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
+    <Content Include="Scripts\css\query-builder.dark.css" />
+    <Content Include="Scripts\css\query-builder.dark.min.css" />
+    <Content Include="Scripts\css\query-builder.default.css" />
+    <Content Include="Scripts\css\query-builder.default.min.css" />
+    <Content Include="Scripts\i18n\query-builder.ar.js" />
+    <Content Include="Scripts\i18n\query-builder.az.js" />
+    <Content Include="Scripts\i18n\query-builder.bg.js" />
+    <Content Include="Scripts\i18n\query-builder.cs.js" />
+    <Content Include="Scripts\i18n\query-builder.da.js" />
+    <Content Include="Scripts\i18n\query-builder.de.js" />
+    <Content Include="Scripts\i18n\query-builder.el.js" />
+    <Content Include="Scripts\i18n\query-builder.en.js" />
+    <Content Include="Scripts\i18n\query-builder.es.js" />
+    <Content Include="Scripts\i18n\query-builder.fa-IR.js" />
+    <Content Include="Scripts\i18n\query-builder.fr.js" />
+    <Content Include="Scripts\i18n\query-builder.he.js" />
+    <Content Include="Scripts\i18n\query-builder.it.js" />
+    <Content Include="Scripts\i18n\query-builder.nl.js" />
+    <Content Include="Scripts\i18n\query-builder.no.js" />
+    <Content Include="Scripts\i18n\query-builder.pl.js" />
+    <Content Include="Scripts\i18n\query-builder.pt-BR.js" />
+    <Content Include="Scripts\i18n\query-builder.pt-PT.js" />
+    <Content Include="Scripts\i18n\query-builder.ro.js" />
+    <Content Include="Scripts\i18n\query-builder.ru.js" />
+    <Content Include="Scripts\i18n\query-builder.sq.js" />
+    <Content Include="Scripts\i18n\query-builder.tr.js" />
+    <Content Include="Scripts\i18n\query-builder.ua.js" />
+    <Content Include="Scripts\i18n\query-builder.zh-CN.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -207,6 +236,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\query-builder.js" />
+    <Content Include="Scripts\js\query-builder.min.js" />
+    <Content Include="Scripts\js\query-builder.standalone.js" />
+    <Content Include="Scripts\js\query-builder.standalone.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\query-builder.standalone.min.js" />
     <Content Include="Scripts\respond.js" />
@@ -226,6 +259,17 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Scripts\scss\dark.scss" />
+    <Content Include="Scripts\scss\default.scss" />
+    <Content Include="Scripts\scss\plugins\bt-tooltip-errors.scss" />
+    <Content Include="Scripts\scss\plugins\filter-description.scss" />
+    <Content Include="Scripts\scss\plugins\invert.scss" />
+    <Content Include="Scripts\scss\plugins\sortable.scss" />
+    <Content Include="Scripts\scss\plugins\_bt-checkbox.scss" />
+    <Content Include="Scripts\scss\plugins\_bt-tooltip-errors.scss" />
+    <Content Include="Scripts\scss\plugins\_filter-description.scss" />
+    <Content Include="Scripts\scss\plugins\_invert.scss" />
+    <Content Include="Scripts\scss\plugins\_sortable.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
