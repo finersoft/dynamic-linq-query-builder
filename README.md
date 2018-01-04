@@ -46,9 +46,11 @@ Contributions
 Contributions and pull requests are welcome.
 
 对示例的增强：汉化，实用。
-
+--
 汉化
+-
 汉化了界面元素（加入了官方汉化包和实体属性汉化）
 
 打印sql(在示例运行后，进入开发者模式，可以看到生成的sql语句)
+-
 FirstName = 'Jane' OR ( Age < 40 )  OR LastName LIKE('%on%')
