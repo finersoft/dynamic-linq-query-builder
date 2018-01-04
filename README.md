@@ -54,3 +54,5 @@ Contributions and pull requests are welcome.
 打印sql(在示例运行后，进入开发者模式，可以看到生成的sql语句)
 -
 FirstName = 'Jane' OR ( Age < 40 )  OR LastName LIKE('%on%')
+
+ ![image](https://github.com/finersoft/dynamic-linq-query-builder-i18nzh-CN/raw/master/i18nzh-CNView.png)
